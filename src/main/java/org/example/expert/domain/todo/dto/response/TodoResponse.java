@@ -11,15 +11,17 @@ public class TodoResponse {
     private final Long id;
     private final String title;
     private final String contents;
+    private String nickName;
     private final String weather;
     private final UserResponse user;
     private final LocalDateTime createdAt;
     private final LocalDateTime modifiedAt;
 
-    public TodoResponse(Long id, String title, String contents, String weather, UserResponse user, LocalDateTime createdAt, LocalDateTime modifiedAt) {
+    public TodoResponse(Long id, String title, String contents,String nickName,  String weather, UserResponse user, LocalDateTime createdAt, LocalDateTime modifiedAt) {
         this.id = id;
         this.title = title;
         this.contents = contents;
+        this.nickName = nickName;
         this.weather = weather;
         this.user = user;
         this.createdAt = createdAt;
